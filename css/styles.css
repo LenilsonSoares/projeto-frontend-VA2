@@ -22,10 +22,13 @@ input {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
     width: 80%;
+    max-width: 1200px; /* Adicione uma largura máxima ao contêiner principal */
     margin: 0 auto;
     padding: 20px;
 }
@@ -46,7 +49,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Para ocupar toda a altura da janela de visualização */
+    min-height: 100vh;
 }
 
 section {
@@ -81,6 +84,13 @@ button.cta-button:hover {
     box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
 }
 
+@media only screen and (max-width: 600px) {
+    button.cta-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
 footer {
     background: linear-gradient(to right, #000, #4b4b4b);
     color: #fff;
@@ -89,7 +99,8 @@ footer {
 }
 
 .solution img {
-    width: 1100px; /* Define a largura fixa */
+    width: 100%;
+    max-width: 1100px;
     height: auto;
     display: block;
     margin: 0 auto;
