@@ -1,0 +1,105 @@
+/* Reset CSS básico */
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+button,
+form,
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(to right, #4b4b4b, #000);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Para ocupar toda a altura da janela de visualização */
+}
+
+section {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button.cta-button {
+    padding: 15px 30px;
+    background: linear-gradient(to right, #ff9147, #ff4500);
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+button.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+}
+
+footer {
+    background: linear-gradient(to right, #000, #4b4b4b);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilo para o vídeo de fundo */
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
