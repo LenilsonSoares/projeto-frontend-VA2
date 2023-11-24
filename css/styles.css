@@ -1,4 +1,4 @@
-/* Reset CSS básico */
+/* Reset CSS */
 html,
 body,
 ul,
@@ -88,18 +88,9 @@ footer {
     padding: 20px 0;
 }
 
-/* Estilo para o vídeo de fundo */
-#video-background {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
+.solution img {
+    width: 1100px; /* Define a largura fixa */
     height: auto;
-    z-index: -1000;
-    overflow: hidden;
-    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
-
-
