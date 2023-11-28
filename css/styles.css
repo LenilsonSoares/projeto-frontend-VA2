@@ -94,14 +94,8 @@ footer {
     padding: 20px 0;
 }
 
-<<<<<<< HEAD
-.solution img {
-    width: 100%;
-    max-width: 100px;
-=======
 .solucao img {
     max-width: 100%;
->>>>>>> c4bb00a0f683b2692edeb0fdd5aecd201b76f3a8
     height: auto;
     display: block;
     margin: 0 auto;
