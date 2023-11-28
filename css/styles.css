@@ -22,13 +22,14 @@ input {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    max-width: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
 .container {
     width: 80%;
-    max-width: 1200px; /* Adicione uma largura máxima ao contêiner principal */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -45,17 +46,11 @@ header h1 {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    text-align: center;
 }
 
 section {
-    width: 100%;
     padding: 60px 0;
-    text-align: center;
 }
 
 section h2 {
@@ -68,7 +63,7 @@ section p {
     margin-bottom: 20px;
 }
 
-button.cta-button {
+button.chamada-acao {
     padding: 15px 30px;
     background: linear-gradient(to right, #ff9147, #ff4500);
     color: #fff;
@@ -77,15 +72,16 @@ button.cta-button {
     font-weight: bold;
     font-size: 18px;
     transition: all 0.3s ease;
+    border: none;
 }
 
-button.cta-button:hover {
+button.chamada-acao:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
 }
 
 @media only screen and (max-width: 600px) {
-    button.cta-button {
+    button.chamada-acao {
         padding: 10px 20px;
         font-size: 16px;
     }
@@ -98,10 +94,25 @@ footer {
     padding: 20px 0;
 }
 
+<<<<<<< HEAD
 .solution img {
     width: 100%;
     max-width: 100px;
+=======
+.solucao img {
+    max-width: 100%;
+>>>>>>> c4bb00a0f683b2692edeb0fdd5aecd201b76f3a8
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+/* Estilos para dispositivos menores, como smartphones */
+@media only screen and (max-width: 600px) {
+    /* Ajustes de estilo para elementos em telas menores */
+}
+
+/* Estilos para tablets e telas maiores */
+@media only screen and (min-width: 601px) {
+    /* Ajustes de estilo para elementos em telas maiores */
 }
