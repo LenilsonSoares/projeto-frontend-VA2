@@ -275,7 +275,7 @@ a.chamada-acao:hover {
 
 /* Estilos para links dentro das informações adicionais */
 .info-box h3 a {
-    color: #000000; /* cor dos links */
+    color: #0066cc; /* cor dos links */
     text-decoration: none; /* remover sublinhado padrão */
     transition: color 0.3s ease; /* transição suave da cor ao passar o mouse */
 }
@@ -284,4 +284,3 @@ a.chamada-acao:hover {
 .info-box h3 a:hover {
     color: #ff6600; /* cor alterada ao passar o mouse */
 }
-
