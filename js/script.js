@@ -36,32 +36,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Arquivo script.js
-
-// Função para rolar suavemente de volta ao topo da página
-function scrollToTop() {
-    const c = document.documentElement.scrollTop || document.body.scrollTop;
-    if (c > 0) {
-        window.requestAnimationFrame(scrollToTop);
-        window.scrollTo(0, c - c / 8);
-    }
-}
-
-// Adiciona um listener de evento para o link "Voltar ao Topo"
-document.addEventListener('DOMContentLoaded', function() {
-    const linkVoltarTopo = document.querySelector('.voltar-topo');
-    if (linkVoltarTopo) {
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 300) {
-                linkVoltarTopo.classList.add('show');
-            } else {
-                linkVoltarTopo.classList.remove('show');
-            }
-        });
-
-        linkVoltarTopo.addEventListener('click', function(e) {
-            e.preventDefault();
-            scrollToTop();
-        });
-    }
-});
