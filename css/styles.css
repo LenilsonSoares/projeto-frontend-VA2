@@ -285,3 +285,20 @@ a.chamada-acao:hover {
     color: #ff6600; /* cor alterada ao passar o mouse */
 }
 
+/* Seus estilos aqui */
+.voltar-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.voltar-topo.show {
+    display: block;
+}
