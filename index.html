@@ -1,74 +1,102 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang="pt-BR"> <!-- Definição do idioma como Português do Brasil -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnologias na Gestão de Frota</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="icons/1007899.png">
-    <script src="js/script.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+    <!-- Cabeçalho da página -->
+    <meta charset="UTF-8"> <!-- Configuração do conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração da viewport para design responsivo -->
+    <title>Tecnologias na Gestão de Frota</title> <!-- Título da página -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link para a folha de estilos externa -->
+    <link rel="icon" href="icons/1007899.png"> <!-- Link para o ícone do site -->
+    <script src="js/script.js" defer></script> <!-- Inclusão do script JavaScript deferido -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Inclusão da biblioteca Chart.js -->
 </head>
 
 <body>
+    <!-- Corpo da página -->
+
     <header>
+        <!-- Cabeçalho do site -->
         <div class="container">
+            <!-- Contêiner para o cabeçalho -->
             <a href="index.html">
+                <!-- Link para a página inicial -->
                 <img src="icons/1007899.png" alt="Logo da Tecnologias na Gestão de Frota" class="logo">
+                <!-- Imagem do logo -->
             </a>
             <h1>Tecnologias na Gestão de Frota</h1>
+            <!-- Título principal -->
         </div>
     </header>
 
     <main>
+        <!-- Seção principal do conteúdo -->
+
+       
         <section class="destaque">
-            <div class="container">
+            <!-- Seção destacada -->
+            
+            <div class="solicitacao-demo">
+                <!-- Contêiner para o conteúdo -->
                 <h2>Maximize sua Eficiência de Frota</h2>
+                <!-- Subtítulo -->
                 <p>Gerencie sua frota de forma inteligente e eficiente. Oferecemos soluções abrangentes para otimizar suas operações.</p>
+                <!-- Descrição -->
                 <a href="experimente-agora.html" class="chamada-acao">Experimente Agora</a>
+                <!-- Botão de chamada para ação -->
             </div>
         </section>
 
         <section class="solucao">
+            <!-- Seção da solução tecnológica -->
             <div class="container">
                 <h2>Nossa Solução Tecnológica</h2>
+                <!-- Subtítulo -->
                 <p>Conheça nossa plataforma inovadora para gestão de frotas, com benefícios como:</p>
+                <!-- Descrição -->
                 <p>Rastreamento em tempo real, manutenção preditiva e otimização de rotas.</p>
-                <img src="images/mockups3-min.png" alt="Mockup da solução tecnológica">
+                <!-- Lista de benefícios -->
+                <img src="images/mockups3-min.png" alt="Solução tecnológica">
+                <!-- Imagem ilustrativa -->
             </div>
+        </div>
         </section>
 
         <section class="beneficios">
+            <!-- Seção de benefícios -->
             <div class="container">
                 <h2>Benefícios do Nosso Sistema de Gestão de Frota</h2>
+                <!-- Subtítulo -->
                 <div class="beneficios-grid">
-                    <!-- Benefício 1 -->
+                    <!-- Grid para os benefícios -->
                     <div class="beneficio">
+                        <!-- Bloco de benefício -->
                         <img src="images/location_6773039.png" alt="Rastreamento em Tempo Real">
+                        <!-- Ícone -->
                         <h3>Rastreamento em Tempo Real</h3>
+                        <!-- Título -->
                         <p>Acompanhe seus veículos em tempo real, garantindo maior controle e segurança.</p>
+                        <!-- Descrição -->
                     </div>
-                    <!-- Benefício 2 -->
+
                     <div class="beneficio">
                         <img src="images/location_6773039.png" alt="Manutenção Preditiva">
                         <h3>Manutenção Preditiva</h3>
                         <p>Antecipe problemas e evite falhas através de análises preditivas, reduzindo custos de manutenção.</p>
                     </div>
-                    <!-- Benefício 3 -->
+
                     <div class="beneficio">
                         <img src="images/location_6773039.png" alt="Análise de Eficiência">
                         <h3>Análise de Eficiência</h3>
                         <p>Identifique oportunidades de melhoria na utilização da frota para aumentar a eficiência operacional.</p>
                     </div>
-                    <!-- Benefício 4 -->
+
                     <div class="beneficio">
                         <img src="images/location_6773039.png" alt="Redução de Custos Operacionais">
                         <h3>Redução de Custos Operacionais</h3>
                         <p>Reduza os custos operacionais, economizando recursos financeiros através de nossa solução.</p>
                     </div>
-                    <!-- Benefício 5 -->
+
                     <div class="beneficio">
                         <img src="images/location_6773039.png" alt="Aumento da Satisfação do Cliente">
                         <h3>Aumento da Satisfação do Cliente</h3>
@@ -79,21 +107,39 @@
         </section>
 
         <section class="midia">
+            <!-- Seção de mídia -->
             <div class="container">
+                <!-- Contêiner para o conteúdo de mídia -->
                 <h2>Recursos Visuais</h2>
+                <!-- Subtítulo -->
                 <p>Veja nossos vídeos explicativos e infográficos interativos.</p>
-                <!-- Vídeo -->
+                <!-- Descrição -->
                 <video width="100%" height="auto" controls>
+                    <!-- Player de vídeo -->
                     <source src="videos/istockphoto-1218332108-640_adpp_is.mp4" type="video/mp4">
+                    <!-- Fonte do vídeo -->
                     Seu navegador não suporta a tag de vídeo.
+                    <!-- Mensagem alternativa para navegadores que não suportam vídeo -->
                 </video>
-                <div class="infografico-container">
-                    <canvas id="meuGrafico"></canvas>
+                <div class="info-box">
+                    <div class="infografico-container">
+                        <!-- Contêiner para o infográfico -->
+                        <canvas id="meuGrafico"></canvas>
+                        <!-- Elemento de tela para o infográfico -->
+                    </div>   
                 </div>
+
+            </div>
+        </section>
+
         <section class="depoimentos">
+            <!-- Seção de depoimentos -->
             <div class="container">
+                <!-- Contêiner para o conteúdo de depoimentos -->
                 <h2>Depoimentos de Clientes</h2>
+                <!-- Subtítulo -->
                 <div class="depoimento">
+                    <!-- Bloco de depoimento -->
                     <p class="citacao">"Nossa empresa melhorou significativamente com a solução de gestão de frota oferecida. A previsão de manutenções e o rastreamento em tempo real são essenciais para o nosso sucesso." - Empresa A</p>
                     <p class="citacao">"A implementação da tecnologia IoT trouxe grandes benefícios para a nossa eficiência operacional. Recomendamos fortemente!" - Empresa B</p>
                 </div>
@@ -101,12 +147,19 @@
         </section>
 
         <section class="solicitacao-demo">
+            <!-- Seção de solicitação de demonstração -->
             <div class="container">
+                <!-- Contêiner para o conteúdo -->
                 <h2>Solicite uma Demonstração</h2>
+                <!-- Subtítulo -->
                 <form action="#" method="POST">
+                    <!-- Formulário para solicitar uma demonstração -->
                     <label for="nome">
+                        <!-- Rótulo do campo -->
                         Seu Nome:
+                        <!-- Texto explicativo -->
                         <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
+                        <!-- Campo de entrada de texto -->
                     </label>
                     <label for="email">
                         Seu E-mail:
@@ -121,16 +174,23 @@
                         <input type="text" id="empresa" name="empresa" placeholder="Insira o nome da sua empresa" required>
                     </label>
                     <button type="submit" class="chamada-acao">Solicitar Demonstração</button>
+                    <!-- Botão de envio -->
                 </form>
             </div>
         </section>
 
         <section class="informacoes-adicionais">
+            <!-- Seção de informações adicionais -->
             <div class="container">
+                <!-- Contêiner para o conteúdo -->
                 <h2>Informações Adicionais</h2>
+                <!-- Subtítulo -->
                 <div class="info-box">
+                    <!-- Caixa de informação -->
                     <h3><a href="estudos-de-caso.html">Estudos de Caso</a></h3>
+                    <!-- Título do link -->
                     <p>Confira os casos de sucesso de clientes que já utilizam nossa solução.</p>
+                    <!-- Descrição -->
                 </div>
                 <div class="info-box">
                     <h3><a href="faq-perguntas-frequentes.html">FAQ - Perguntas Frequentes</a></h3>
@@ -145,15 +205,13 @@
     </main>
 
     <footer>
+        <!-- Rodapé da página -->
         <div class="container">
+            <!-- Contêiner para o conteúdo do rodapé -->
             <p>&copy; 2023 Tecnologias na Gestão de Frota</p>
+            <!-- Aviso de direitos autorais -->
         </div>
-        <!-- Aviso de cookies -->
-    <div class="cookie-banner" id="cookieBanner">
-        <p>Este site usa cookies para garantir a melhor experiência. Ao continuar, você concorda com o uso de cookies.</p>
-        <button id="acceptCookies">Aceitar Cookies</button>
-    </div>
-        
+
     </footer>
 </body>
 

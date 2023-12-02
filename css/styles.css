@@ -1,283 +1,284 @@
 /* Reset CSS - Zera estilos padrão */
 html, body, ul, li, h1, h2, p, button, form, input {
-    margin: 0;
-    padding: 0;
-    border: none;
-    list-style: none;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
+    margin: 0; /* Margens zeradas */
+    padding: 0; /* Preenchimento zerado */
+    border: none; /* Bordas zeradas */
+    list-style: none; /* Estilo de lista removido */
+    text-decoration: none; /* Decoração de texto removida */
+    font-family: Arial, sans-serif; /* Fonte padrão definida como Arial ou sans-serif */
+    box-sizing: border-box; /* Modelo de caixa para facilitar o dimensionamento */
 }
 
 /* Estilos gerais para o corpo da página */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    font-family: 'Arial', sans-serif; /* Fonte padrão para o corpo do documento */
+    line-height: 1.6; /* Altura da linha */
+    margin: 0; /* Margem zerada */
+    padding: 0; /* Preenchimento zerado */
+    overflow-x: hidden; /* Barra de rolagem horizontal oculta */
 }
 
 /* Estilização do container principal */
 .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 80%; /* Largura do container principal */
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 20px; /* Preenchimento interno */
 }
 
 /* Estilos para o cabeçalho (header) */
 header {
-    background: linear-gradient(to right, #4b4b4b, #000);
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    background: linear-gradient(to right, #4b4b4b, #000); /* Fundo com gradiente linear */
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Preenchimento interno */
+    text-align: center; /* Alinhamento do texto centralizado */
 }
 
 /* Estilos para o título principal no cabeçalho */
 header h1 {
-    font-size: 36px;
+    font-size: 36px; /* Tamanho da fonte */
 }
 
 /* Ajustes para o conteúdo principal */
 main {
-    text-align: center;
+    text-align: center; /* Alinhamento do texto centralizado */
 }
 
 /* Estilos gerais para seções */
 section {
-    padding: 60px 0;
+    padding: 60px 0; /* Preenchimento interno superior e inferior */
 }
 
 /* Estilos para títulos de seção */
 section h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 28px; /* Tamanho da fonte */
+    margin-bottom: 30px; /* Margem inferior */
 }
 
 /* Estilos para parágrafos dentro de seções */
 section p {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 16px; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Margem inferior */
 }
 
 /* Estilos para botão de chamada de ação e links */
 button.chamada-acao, a.chamada-acao {
-    padding: 15px 30px;
-    background: linear-gradient(to right, #ff9147, #ff4500);
-    color: #fff;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.3s ease;
-    border: none;
-    text-decoration: none;
-    display: inline-block;
+    padding: 15px 30px; /* Preenchimento interno */
+    background: linear-gradient(to right, #ff9147, #ff4500); /* Fundo com gradiente linear */
+    color: #fff; /* Cor do texto */
+    border-radius: 25px; /* Borda arredondada */
+    cursor: pointer; /* Cursor do mouse */
+    font-weight: bold; /* Peso da fonte */
+    font-size: 18px; /* Tamanho da fonte */
+    transition: all 0.3s ease; /* Transição suave de propriedades */
+    border: none; /* Borda removida */
+    text-decoration: none; /* Decoração de texto removida */
+    display: inline-block; /* Elemento de bloco em linha */
 }
 
 /* Efeito hover para botão de chamada de ação e links */
 button.chamada-acao:hover, a.chamada-acao:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
+    transform: scale(1.05); /* Escala aumentada */
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4); /* Sombra suave */
 }
 
 /* Media query para ajustes em dispositivos menores */
 @media only screen and (max-width: 600px) {
     button.chamada-acao, a.chamada-acao {
-        padding: 10px 20px;
-        font-size: 16px;
+        padding: 10px 20px; /* Preenchimento interno reduzido */
+        font-size: 16px; /* Tamanho da fonte reduzido */
     }
 }
 
 /* Estilos para o rodapé (footer) */
 footer {
-    background: linear-gradient(to right, #000, #4b4b4b);
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    background: linear-gradient(to right, #000, #4b4b4b); /* Fundo com gradiente linear */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto centralizado */
+    padding: 20px 0; /* Preenchimento interno superior e inferior */
 }
 
 /* Estilos para imagens na seção de solução */
 .solucao img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    max-width: 100%; /* Largura máxima de imagem */
+    height: auto; /* Altura automática para evitar distorção */
+    display: block; /* Torna a imagem um bloco para alinhar corretamente */
+    margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
 }
 
 /* Layout dos benefícios em grade */
 .beneficios-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: flex; /* Exibição flexível para alinhar itens em linha */
+    justify-content: center; /* Alinhamento centralizado */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Quebra de linha em dispositivos menores */
 }
 
 /* Estilo individual de cada benefício */
 .beneficio {
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: #ffffff;
+    width: 300px; /* Largura do benefício */
+    padding: 20px; /* Preenchimento interno */
+    border: 1px solid #ccc; /* Borda sólida */
+    border-radius: 8px; /* Borda arredondada */
+    text-align: center; /* Alinhamento do texto centralizado */
+    margin-bottom: 20px; /* Margem inferior */
+    background-color: #ffffff; /* Cor de fundo */
 }
 
 /* Estilo para ícones dos benefícios */
 .beneficio img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
+    width: 80px; /* Largura do ícone */
+    height: 80px; /* Altura do ícone */
+    margin-bottom: 15px; /* Margem inferior */
 }
 
 /* Media query para dispositivos menores */
 @media only screen and (max-width: 600px) {
     .beneficio {
-        width: 100%;
+        width: 100%; /* Largura total em dispositivos menores */
     }
 }
 
 /* Estilos para as informações adicionais */
 .info-box {
-    background-color: #fff;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
+    background-color: #fff; /* Cor de fundo */
+    border: 1px solid #eee; /* Borda sólida */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Preenchimento interno */
+    margin-bottom: 20px; /* Margem inferior */
+    transition: transform 0.3s ease; /* Transição suave de propriedades */
 }
 
 /* Estilos para títulos e links dentro das informações adicionais */
 .info-box h3, .info-box h3 a {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 24px; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Margem inferior */
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Decoração de texto removida */
+    transition: color 0.3s ease; /* Transição suave de cor */
 }
 
 /* Estilos para texto das informações adicionais */
 .info-box p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha */
+    color: #666; /* Cor do texto */
 }
 
 /* Efeito hover para informações adicionais */
 .info-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); /* Deslocamento para cima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 /* Estilos para a logo */
 .logo {
     width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
+    height: auto; /* Altura automática para evitar distorção */
 }
 
 /* Estilos para os campos do formulário */
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Exibição flexível para alinhar itens em linha */
+    flex-direction: column; /* Direção da coluna para empilhar itens verticalmente */
+    align-items: center; /* Alinhamento centralizado */
 }
 
 /* Estilos para rótulos dos campos do formulário */
 label {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Margem inferior */
 }
 
 /* Estilos para campos de entrada do formulário */
 input[type="text"], input[type="email"], input[type="tel"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    width: 100%; /* Largura total */
+    padding: 10px; /* Preenchimento interno */
+    margin-bottom: 15px; /* Margem inferior */
+    border: 1px solid #ccc; /* Borda sólida */
+    border-radius: 5px; /* Borda arredondada */
+    box-sizing: border-box; /* Modelo de caixa para facilitar o dimensionamento */
 }
 
 /* Estilos para botão de submissão do formulário */
 button[type="submit"] {
-    padding: 12px 20px;
-    background-color: #ff9147;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 12px 20px; /* Preenchimento interno */
+    background-color: #ff9147; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Borda removida */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor do mouse */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
 }
 
 /* Efeito hover para botão de submissão do formulário */
 button[type="submit"]:hover {
-    background-color: #ff4500;
+    background-color: #ff4500; /* Cor de fundo alterada no hover */
 }
 
 /* Estilos para seção de solicitação de demonstração */
 .solicitacao-demo {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    max-width: 500px;
-    margin: 0 auto;
+    background-color: #f9f9f9; /* Cor de fundo */
+    padding: 20px; /* Preenchimento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 30px; /* Margem inferior */
+    max-width: 500px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o elemento na página */
 }
 
 /* Estilo quando o mouse passa por cima do link dentro das informações adicionais */
 .info-box h3 a:hover, .info-box h3 a:hover {
-    color: #ff6600; /* cor alterada ao passar o mouse */
+    color: #ff6600; /* Cor alterada ao passar o mouse */
 }
 
 /* Estilo para vídeos responsivos */
 .midia video, .midia iframe {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Largura máxima */
+    height: auto; /* Altura automática para evitar distorção */
 }
 
 #meuGraficoContainer {
-    width: 100%;
-    max-width: 600px; /* Define um tamanho máximo para evitar que o gráfico fique muito grande em telas grandes */
+    width: 100%; /* Largura total */
+    max-width: 600px; /* Largura máxima para evitar que o gráfico fique muito grande em telas grandes */
     margin: auto; /* Centraliza o container */
 }
 
 body {
     /* Outros estilos */
-    background: linear-gradient(to bottom right, #e6e0d5, #979191);
+    background: linear-gradient(to bottom right, #e6e0d5, #979191); /* Fundo com gradiente linear */
     /* Outros estilos */
 }
 
 /* Estilos para o aviso de cookies */
 .cookie-banner {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    display: none; /* Elemento inicialmente oculto */
+    position: fixed; /* Posicionamento fixo */
+    bottom: 0; /* Alinhamento inferior */
+    left: 0; /* Alinhamento à esquerda */
+    width: 100%; /* Largura total */
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Preenchimento interno */
+    text-align: center; /* Alinhamento do texto centralizado */
 }
 
 .cookie-banner p {
-    margin: 0;
+    margin: 0; /* Margem zerada */
 }
 
 .cookie-banner button {
-    background-color: #ff6600;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+    background-color: #ff6600; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Preenchimento interno do botão */
+    border: none; /* Borda removida */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor do mouse */
+    margin-top: 10px; /* Margem superior */
 }
 
+/* Efeito hover para o botão de cookies */
 .cookie-banner button:hover {
-    background-color: #ff4500;
+    background-color: #ff4500; /* Cor de fundo alterada no hover */
 }
 
