@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maximize sua Eficiência de Frota</title>
+    <title>Tecnologias na Gestão de Frota</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="icons/1007899.png">
     <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
@@ -25,7 +26,7 @@
         <section class="destaque">
             <div class="container">
                 <h2>Maximize sua Eficiência de Frota</h2>
-                <p>Transforme a gestão da sua frota com nossa solução tecnológica avançada. Aumente a eficiência, reduza custos e otimize suas operações.</p>
+                <p>Gerencie sua frota de forma inteligente e eficiente. Oferecemos soluções abrangentes para otimizar suas operações.</p>
                 <a href="experimente-agora.html" class="chamada-acao">Experimente Agora</a>
             </div>
         </section>
@@ -45,7 +46,7 @@
                 <div class="beneficios-grid">
                     <!-- Benefício 1 -->
                     <div class="beneficio">
-                        <img src="images/location_6773039.png" alt="Rastreamento em tempo real">
+                        <img src="images/location_6773039.png" alt="Rastreamento em Tempo Real">
                         <h3>Rastreamento em Tempo Real</h3>
                         <p>Acompanhe seus veículos em tempo real, garantindo maior controle e segurança.</p>
                     </div>
@@ -76,18 +77,19 @@
                 </div>
             </div>
         </section>
+
         <section class="midia">
             <div class="container">
                 <h2>Recursos Visuais</h2>
                 <p>Veja nossos vídeos explicativos e infográficos interativos.</p>
-                <iframe width="560" height="315" src="videos/istockphoto-1218332108-640_adpp_is.mp4" style="border: 0;"></iframe>
-                <!-- Infográfico -->
-                <div class="infografico">
-                    <img src="images/infografico-min.png" alt="Infográfico Interativo">
+                <!-- Vídeo -->
+                <video width="100%" height="auto" controls>
+                    <source src="videos/istockphoto-1218332108-640_adpp_is.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+                <div class="infografico-container">
+                    <canvas id="meuGrafico"></canvas>
                 </div>
-            </div>
-        </section>
-        
         <section class="depoimentos">
             <div class="container">
                 <h2>Depoimentos de Clientes</h2>
@@ -96,7 +98,7 @@
                     <p class="citacao">"A implementação da tecnologia IoT trouxe grandes benefícios para a nossa eficiência operacional. Recomendamos fortemente!" - Empresa B</p>
                 </div>
             </div>
-        </section>        
+        </section>
 
         <section class="solicitacao-demo">
             <div class="container">
@@ -122,10 +124,8 @@
                 </form>
             </div>
         </section>
-        
-        
 
-    <section class="informacoes-adicionais">
+        <section class="informacoes-adicionais">
             <div class="container">
                 <h2>Informações Adicionais</h2>
                 <div class="info-box">
@@ -142,14 +142,13 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Tecnologias na Gestão de Frota
+            <p>&copy; 2023 Tecnologias na Gestão de Frota</p>
         </div>
-        </footer>
-    </body>
-    
-    </html>
+    </footer>
+</body>
+
+</html>

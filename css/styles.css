@@ -1,14 +1,5 @@
 /* Reset CSS - Zera estilos padrão */
-html,
-body,
-ul,
-li,
-h1,
-h2,
-p,
-button,
-form,
-input {
+html, body, ul, li, h1, h2, p, button, form, input {
     margin: 0;
     padding: 0;
     border: none;
@@ -70,9 +61,8 @@ section p {
     margin-bottom: 20px;
 }
 
-/* Estilos para botão de chamada de ação */
-button.chamada-acao,
-a.chamada-acao {
+/* Estilos para botão de chamada de ação e links */
+button.chamada-acao, a.chamada-acao {
     padding: 15px 30px;
     background: linear-gradient(to right, #ff9147, #ff4500);
     color: #fff;
@@ -82,21 +72,19 @@ a.chamada-acao {
     font-size: 18px;
     transition: all 0.3s ease;
     border: none;
-    text-decoration: none; /* Remover sublinhado ao usar o link como botão */
+    text-decoration: none;
     display: inline-block;
 }
 
-/* Efeito hover para botão de chamada de ação */
-button.chamada-acao:hover,
-a.chamada-acao:hover {
+/* Efeito hover para botão de chamada de ação e links */
+button.chamada-acao:hover, a.chamada-acao:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
 }
 
 /* Media query para ajustes em dispositivos menores */
 @media only screen and (max-width: 600px) {
-    button.chamada-acao,
-    a.chamada-acao {
+    button.chamada-acao, a.chamada-acao {
         padding: 10px 20px;
         font-size: 16px;
     }
@@ -161,12 +149,13 @@ footer {
     transition: transform 0.3s ease;
 }
 
-/* Estilos para títulos das informações adicionais */
-.info-box h3 {
+/* Estilos para títulos e links dentro das informações adicionais */
+.info-box h3, .info-box h3 a {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333;
-    
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 /* Estilos para texto das informações adicionais */
@@ -201,9 +190,7 @@ label {
 }
 
 /* Estilos para campos de entrada do formulário */
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
+input[type="text"], input[type="email"], input[type="tel"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -239,66 +226,13 @@ button[type="submit"]:hover {
     margin: 0 auto;
 }
 
-/* Estilos para links dentro das informações adicionais */
-.info-box h3 a {
-    color: #0066cc; /* cor dos links */
-    text-decoration: none; /* remover sublinhado padrão */
-    transition: color 0.3s ease; /* transição suave da cor ao passar o mouse */
-}
-
 /* Estilo quando o mouse passa por cima do link dentro das informações adicionais */
-.info-box h3 a:hover {
+.info-box h3 a:hover, .info-box h3 a:hover {
     color: #ff6600; /* cor alterada ao passar o mouse */
 }
 
-/* Estilos para botão de chamada de ação */
-button.chamada-acao,
-a.chamada-acao {
-    padding: 15px 30px;
-    background: linear-gradient(to right, #ff9147, #ff4500);
-    color: #fff;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.3s ease;
-    border: none;
-    text-decoration: none; /* Remover sublinhado ao usar o link como botão */
-    display: inline-block;
-}
-
-/* Efeito hover para botão de chamada de ação */
-button.chamada-acao:hover,
-a.chamada-acao:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.4);
-}
-
-/* Estilos para links dentro das informações adicionais */
-.info-box h3 a {
-    color: #000000; /* cor dos links */
-    text-decoration: none; /* remover sublinhado padrão */
-    transition: color 0.3s ease; /* transição suave da cor ao passar o mouse */
-}
-
-/* Estilo quando o mouse passa por cima do link dentro das informações adicionais */
-.info-box h3 a:hover {
-    color: #ff6600; /* cor alterada ao passar o mouse */
-}
-
-
-/* Estilos para o Infográfico */
-.infografico {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    height: 200px; /* Ajuste conforme necessário */
-    margin-top: 20px;
-}
-
-.barra {
-    width: 20px;
-    background-color: #3498db; /* Cor da barra, ajuste conforme necessário */
-    border-radius: 5px;
-    margin-bottom: 5px;
+/* Estilo para vídeos responsivos */
+.midia video, .midia iframe {
+    max-width: 100%;
+    height: auto;
 }

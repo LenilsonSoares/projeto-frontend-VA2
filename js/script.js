@@ -36,3 +36,59 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Arquivo script.js
+
+// Função para rolar suavemente de volta ao topo da página
+function scrollToTop() {
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) {
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, c - c / 8);
+    }
+}
+
+// Adiciona um listener de evento para o link "Voltar ao Topo"
+document.addEventListener('DOMContentLoaded', function() {
+    const linkVoltarTopo = document.querySelector('.voltar-topo');
+    if (linkVoltarTopo) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                linkVoltarTopo.classList.add('show');
+            } else {
+                linkVoltarTopo.classList.remove('show');
+            }
+        });
+
+        linkVoltarTopo.addEventListener('click', function(e) {
+            e.preventDefault();
+            scrollToTop();
+        });
+    }
+});
+
+function destacarPonto(id) {
+    // Lógica para destacar o ponto selecionado
+    // Você pode adicionar a interatividade desejada aqui
+    console.log(`Ponto ${id} destacado.`);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Dados para o gráfico
+    const dados = {
+        labels: ["Rastreamento", "Manutenção", "Rotas", "Eficiência", "Custos", "Satisfação"],
+        datasets: [{
+            label: "Pontos",
+            backgroundColor: "rgba(255, 69, 0, 0.8)",
+            data: [90, 80, 80, 100, 90, 100],
+        }],
+    };
+
+    // Obtém o contexto do canvas
+    const contexto = document.getElementById("meuGrafico").getContext("2d");
+
+    // Criação do gráfico de barras
+    const meuGrafico = new Chart(contexto, {
+        type: "bar",
+        data: dados,
+    });
+});
