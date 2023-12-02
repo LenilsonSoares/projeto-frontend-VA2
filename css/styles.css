@@ -122,6 +122,7 @@ footer {
     border-radius: 8px;
     text-align: center;
     margin-bottom: 20px;
+    background-color: #ffffff;
 }
 
 /* Estilo para ícones dos benefícios */
@@ -171,7 +172,7 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para a logo animada */
+/* Estilos para a logo */
 .logo {
     width: 100px; /* Ajuste o tamanho conforme necessário */
     height: auto;
@@ -242,3 +243,41 @@ button[type="submit"]:hover {
     max-width: 600px; /* Define um tamanho máximo para evitar que o gráfico fique muito grande em telas grandes */
     margin: auto; /* Centraliza o container */
 }
+
+body {
+    /* Outros estilos */
+    background: linear-gradient(to bottom right, #e6e0d5, #979191);
+    /* Outros estilos */
+}
+
+/* Estilos para o aviso de cookies */
+.cookie-banner {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.cookie-banner p {
+    margin: 0;
+}
+
+.cookie-banner button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cookie-banner button:hover {
+    background-color: #ff4500;
+}
+

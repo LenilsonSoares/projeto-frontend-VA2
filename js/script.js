@@ -96,3 +96,42 @@ const meuGrafico = new Chart(contexto, {
     },
 });
 });
+
+// Função para definir um cookie
+function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+// Função para obter o valor de um cookie específico
+function getCookie(name) {
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const cookies = decodedCookie.split(';');
+    for (let cookie of cookies) {
+        let pair = cookie.split('=');
+        if (pair[0].trim() === name) {
+            return pair[1];
+        }
+    }
+    return "";
+}
+
+// Função para verificar se o usuário já consentiu com os cookies
+function checkCookiesConsent() {
+    const consent = getCookie("cookies-consent");
+    if (consent === "true") {
+        // O usuário já consentiu com os cookies, execute o código relevante aqui
+    } else {
+        // Exibir o banner de cookies
+        document.querySelector('.cookie-banner').style.display = 'block';
+    }
+}
+
+// Event listener para o botão de aceitar cookies
+document.getElementById("accept-cookies").addEventListener("click", function() {
+    setCookie("cookies-consent", "true", 30); // Definir um cookie por 30 dias após aceitar
+    document.querySelector('.cookie-banner').style.display = 'none'; // Esconder o banner após aceitar
+});
+
