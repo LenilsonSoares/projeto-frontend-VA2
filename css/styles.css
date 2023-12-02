@@ -166,6 +166,7 @@ footer {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333;
+    
 }
 
 /* Estilos para texto das informações adicionais */
@@ -283,4 +284,21 @@ a.chamada-acao:hover {
 /* Estilo quando o mouse passa por cima do link dentro das informações adicionais */
 .info-box h3 a:hover {
     color: #ff6600; /* cor alterada ao passar o mouse */
+}
+
+
+/* Estilos para o Infográfico */
+.infografico {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px; /* Ajuste conforme necessário */
+    margin-top: 20px;
+}
+
+.barra {
+    width: 20px;
+    background-color: #3498db; /* Cor da barra, ajuste conforme necessário */
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
