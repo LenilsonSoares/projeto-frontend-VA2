@@ -236,3 +236,9 @@ button[type="submit"]:hover {
     max-width: 100%;
     height: auto;
 }
+
+#meuGraficoContainer {
+    width: 100%;
+    max-width: 600px; /* Define um tamanho máximo para evitar que o gráfico fique muito grande em telas grandes */
+    margin: auto; /* Centraliza o container */
+}

@@ -86,9 +86,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Obtém o contexto do canvas
     const contexto = document.getElementById("meuGrafico").getContext("2d");
 
-    // Criação do gráfico de barras
-    const meuGrafico = new Chart(contexto, {
-        type: "bar",
-        data: dados,
-    });
+// Criação do gráfico de barras
+const meuGrafico = new Chart(contexto, {
+    type: "bar",
+    data: dados,
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+    },
+});
 });
