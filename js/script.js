@@ -58,3 +58,28 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 });
+
+// Função para alternar a visibilidade do menu em telas menores
+function toggleMenu() {
+    var nav = document.getElementById('nav');
+    nav.classList.toggle('show');
+}
+
+
+// Adicione este código no final do seu arquivo JS ou dentro da tag <script> no HTML
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Mostra ou oculta o botão dependendo da posição da página
+window.onscroll = function() {
+    var topButton = document.getElementById('topButton');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topButton.style.display = 'block';
+    } else {
+        topButton.style.display = 'none';
+    }
+};

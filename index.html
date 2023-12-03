@@ -26,14 +26,32 @@
             </a>
             <h1>Tecnologias na Gestão de Frota</h1>
             <!-- Título principal -->
+            <!-- Ícone do menu para telas menores -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <!-- Menu de navegação -->
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#destaque">Home</a></li>
+                <li><a href="#solucao">Solução Tecnológica</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#midia">Recursos Visuais</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#solicitacao-demo">Solicitação de Demonstração</a></li>
+                <li><a href="#informacoes-adicionais">Informações Adicionais</a></li>
+            </ul>
+        </nav>
         </div>
     </header>
 
     <main>
         <!-- Seção principal do conteúdo -->
 
-       
-        <section class="destaque">
+        <section id="destaque" class="destaque">
             <!-- Seção destacada -->
             
             <div class="solicitacao-demo">
@@ -47,7 +65,7 @@
             </div>
         </section>
 
-        <section class="solucao">
+        <section id="solucao" class="solucao">
             <!-- Seção da solução tecnológica -->
             <div class="container">
                 <h2>Nossa Solução Tecnológica</h2>
@@ -62,7 +80,7 @@
         </div>
         </section>
 
-        <section class="beneficios">
+        <section id="beneficios" class="beneficios">
             <!-- Seção de benefícios -->
             <div class="container">
                 <h2>Benefícios do Nosso Sistema de Gestão de Frota</h2>
@@ -106,7 +124,7 @@
             </div>
         </section>
 
-        <section class="midia">
+        <section id="midia" class="midia">
             <!-- Seção de mídia -->
             <div class="container">
                 <!-- Contêiner para o conteúdo de mídia -->
@@ -132,7 +150,7 @@
             </div>
         </section>
 
-        <section class="depoimentos">
+        <section id="depoimentos" class="depoimentos">
             <!-- Seção de depoimentos -->
             <div class="container">
                 <!-- Contêiner para o conteúdo de depoimentos -->
@@ -146,7 +164,7 @@
             </div>
         </section>
 
-        <section class="solicitacao-demo">
+        <section id="solicitacao-demo" class="solicitacao-demo">
             <!-- Seção de solicitação de demonstração -->
             <div class="container">
                 <!-- Contêiner para o conteúdo -->
@@ -179,7 +197,7 @@
             </div>
         </section>
 
-        <section class="informacoes-adicionais">
+        <section id="informacoes-adicionais" class="informacoes-adicionais">
             <!-- Seção de informações adicionais -->
             <div class="container">
                 <!-- Contêiner para o conteúdo -->
@@ -203,7 +221,9 @@
             </div>
         </section>
     </main>
-
+    <div id="topButton" onclick="scrollToTop()">
+        <span>&uarr;</span>
+    </div>
     <footer>
         <!-- Rodapé da página -->
         <div class="container">
