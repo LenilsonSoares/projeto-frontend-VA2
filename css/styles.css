@@ -319,7 +319,6 @@ button[type="submit"]:hover {
     }
 }
 
-/* Adicione este código ao seu arquivo CSS para estilizar o botão */
 #topButton {
     display: none;
     position: fixed;

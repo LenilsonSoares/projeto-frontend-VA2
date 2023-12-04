@@ -83,3 +83,26 @@ window.onscroll = function() {
         topButton.style.display = 'none';
     }
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+    // ... (seu código existente)
+
+    // Função para fechar o menu
+    function fecharMenu() {
+        var nav = document.getElementById('nav');
+        nav.classList.remove('show');
+    }
+
+    // Adicionar um event listener para clicar fora do menu
+    document.addEventListener('click', function (event) {
+        var nav = document.getElementById('nav');
+        var menuIcon = document.querySelector('.menu-icon');
+
+        // Verificar se o clique foi fora do menu e do ícone do menu
+        if (!nav.contains(event.target) && !menuIcon.contains(event.target)) {
+            fecharMenu();
+        }
+    });
+
+    // ... (seu código existente)
+});
