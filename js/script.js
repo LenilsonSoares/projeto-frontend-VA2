@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
         nav.classList.remove('show');
     }
     
+    
     document.addEventListener('click', function (event) {
         var nav = document.getElementById('nav');
         var menuIcon = document.querySelector('.menu-icon');
